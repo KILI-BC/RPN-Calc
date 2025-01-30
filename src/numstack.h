@@ -1,8 +1,9 @@
 #ifndef NUMSTACK_H_INCLUDED
 #define NUMSTACK_H_INCLUDED
 
-#define NUMSTACK_SUCCESS 1
-#define NUMSTACK_FALIURE 0
+#define NUMSTACK_SUCCESS 0
+#define NUMSTACK_MEMORY_ERROR 1
+#define NUMSTACK_STACK_EMPTY 2
 
 typedef struct _numstack_elem{
 	numstack_elem * next;
