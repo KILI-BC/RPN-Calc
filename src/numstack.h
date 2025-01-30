@@ -16,7 +16,7 @@ typedef struct _numstack{
 typedef int numstack_result;
 
 numstack_result numstack_init(numstack *n);
-numstack_result numstack_push(numstack *n, double d);
-double numstack_pop(numstack *n);
+numstack_result numstack_push(numstack *n, double *d);
+numstack_result numstack_pop(numstack *n, double *d);
 
 #endif
