@@ -21,7 +21,7 @@ numstack_result numstack_push(numstack *n, double *d)
 numstack_result numstack_pop(numstack *n, double *d)
 {
 	numstack_elem *old = n->first;
-	if(old = NULL)
+	if(old == NULL)
 		return NUMSTACK_STACK_EMPTY;
 
 	n->first = n->first->next;

@@ -14,12 +14,13 @@ int main(int argc, char *argv[])
 	int i;
 	double d;
 	numstack_result err;
-	numstack *stack_ptr;
+	numstack stack;
+	numstack *stack_ptr = &stack;
 	numstack_init(stack_ptr);
 
 	for (i = 1; i < argc; i++)
 	{
-		if(isdigit(argv[i][i])){
+		if(isdigit(argv[i][0])){
 			d = atof(argv[i]);
 			err = numstack_push(stack_ptr, &d);
 		} else {

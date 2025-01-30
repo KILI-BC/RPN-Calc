@@ -6,7 +6,7 @@
 #define NUMSTACK_STACK_EMPTY 2
 
 typedef struct _numstack_elem{
-	numstack_elem * next;
+	struct _numstack_elem * next;
 	double num;
 } numstack_elem;
 
